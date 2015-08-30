@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name></display-name>
+
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>cn.com.poka.gzhquery.filter.EncodingFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<servlet-name>GZHQueryServlet</servlet-name>
+	</filter-mapping>
+
+
+	<servlet>
+		<servlet-name>GZHQueryServlet</servlet-name>
+		<servlet-class>cn.com.poka.gzhquery.controller.GZHQueryServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>cn.com.poka.gzhquery.controller.IndexServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>NGZHSearchServlet</servlet-name>
+		<servlet-class>cn.com.poka.gzhquery.controller.NGZHSearchServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>PictureServlet</servlet-name>
+		<servlet-class>cn.com.poka.gzhquery.controller.PictureServlet</servlet-class>
+	</servlet>
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>GZHQueryServlet</servlet-name>
+		<url-pattern>/GZHQueryServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/IndexServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NGZHSearchServlet</servlet-name>
+		<url-pattern>/NGZHSearchServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PictureServlet</servlet-name>
+		<url-pattern>/PictureServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- Session 失效时间。 -->
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+</web-app>
