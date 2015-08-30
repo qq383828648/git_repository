@@ -1,0 +1,117 @@
+a:link{
+	color: #999999;
+	}
+	
+	a:visited {color: #999999;}
+	a:hover {color: #999999;}
+	a:active {color: #999999;} 
+	
+	#LockWindows{
+	    position:absolute; top:0px; left:0px; background-color:#777777; z-index:2; display:none;
+	    /* Moz Family使用私有属性-moz-opacity: 0.70 */
+    /* IE 使用私有属性filter */
+    /* 标准属性opacity支持CSS3的浏览器（FF 1.5也支持）*/
+    opacity: 0.30;
+    filter : progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=30,finishOpacity=100);
+    width:expression(documentElement.clientWidth < 900?(documentElement.clientWidth==0?(body.clientWidth<900?'900':'auto'):'900px'):'auto');
+}
+#WindowDIV{
+	position:absolute;
+	z-index:2;
+	background: white;
+	border:#000000 solid 1px;
+	display: none;
+	font-size: 12px;
+}
+
+
+body,table{
+	font-size:13px;
+}
+table{
+	
+	empty-cells:show; 
+	border-collapse: collapse;
+	margin:0 auto;
+}
+td{
+	height:20px;
+	
+}
+h1,h2,h3{
+	font-size:12px;
+	margin:0;
+	padding:0;
+}
+
+.title { background: #FFF; border: 1px solid #9DB3C5; padding: 1px; width:90%;margin:20px auto; }
+	.title h1 { line-height: 31px; text-align:center;  background: #2F589C url(th_bg2.gif); background-repeat: repeat-x; background-position: 0 0; color: #FFF; }
+		.title th, .title td { border: 1px solid #CAD9EA; padding: 5px; }
+
+
+/*这个是借鉴一个论坛的样式*/
+table.t1{
+	border:1px solid #cad9ea;
+	color:#666;
+}
+table.t1 th {
+	background-image: url(images/th_bg1.gif);
+	background-repeat::repeat-x;
+	height:30px;
+}
+table.t1 td,table.t1 th{
+	border:1px solid #cad9ea;
+	padding:0 1em 0;
+}
+table.t1 tr.a1{
+	background-color:#f5fafe;
+}
+
+
+
+.t2{
+	color:#666;
+}
+.t2 th {
+	background: url(images/th_bg2.gif);
+	background-repeat::repeat-x;
+	height:30px;
+	color:#fff;
+	font-size:13px;
+}
+.t2 td{
+	border:1px dotted #cad9ea;
+	padding:0 2px 0;
+}
+.t2 th{
+	border:1px solid #a7d1fd;
+	padding:0 2px 0;
+}
+.t2 tr.a1{
+	background-color:#e8f3fd;
+}
+
+
+
+table.t3{
+	border:1px solid #fc58a6;
+	color:#720337;
+}
+table.t3 th {
+	background-image: url(images/th_bg3.gif);
+	background-repeat::repeat-x;
+	height:30px;
+	color:#35031b;
+}
+table.t3 td{
+	border:1px dashed #feb8d9;
+	padding:0 1.5em 0;
+}
+table.t3 th{
+	border:1px solid #b9f9dc;
+	padding:0 2px 0;
+}
+table.t3 tr.a1{
+	background-color:#fbd8e8;
+}
+
